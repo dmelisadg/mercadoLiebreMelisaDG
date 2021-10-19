@@ -1,36 +1,36 @@
 
 * {
-box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 /* General Mobile first*/
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 h2{
     font-size: 24px;
 }
-.price {
-    font-size: 18px;
+.search-bar{
+    width: 50vw;
+    margin: auto;
 }
-.discount {
-    font-size: 16px;
-}
-    
-.description {
-font-size: 16px;
-}
-
 /* Header */
 .main-header {
     background-color: #EAC926;
     padding: 20px;
 }
 .logo{
-    width: 200px;
+    width: 50%;
+}
+.form{
+    width: 50%;
 }
 .copy-header{
     font-size: 24px;
-    text-align: center;
+    font-weight: lighter;
+    text-align: right;
 }
 .burger-bottom{
     display: block;
@@ -52,7 +52,7 @@ font-size: 16px;
     padding: 0%;
     
 }
-.formulario-producto{
+.formulario-register{
     padding: 20px 15px ;
 }
 .formulario-control {
@@ -78,11 +78,75 @@ font-size: 16px;
     padding: 5px;
     font-size: 17px;
 }
- /* Main */ 
-.main-section .section-products{
-    text-align: center;
-
+/* Home banner */
+.home-banner{
+    display: flex;
 }
+.home-banner img{
+   width: 100vw; 
+}
+ /* Main */ 
+.price-discount{
+    display: flex;
+}
+.price {
+    text-align: right;
+    width: 30%;  
+    font-size: 18px;
+    padding-right: 5px;
+    margin: 0%;
+}
+.discount {
+    text-align: left;
+    width:  70%;
+    padding-left: 5px;
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0%;
+}    
+.description {
+    display: none;
+    font-size: 16px;
+    margin: 0%;
+}
+.main-section{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    margin: auto;
+}
+.main-section h2{
+    color: #666;
+}
+.main-section .section-products .section-article{
+    margin: 5px 0 5px 0;
+    background-color: #ffffff;
+}
+.main-section .section-products img{
+    width: 100%;
+}
+.article-information{
+    border-top: solid 1px #ebebeb;
+    margin: 15px;
+    position: relative;
+}
+.main-section .section-products .section-article .article-information i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
 /* Footer */
 
 .main-footer .footer-options{
@@ -97,15 +161,14 @@ font-size: 16px;
     width: 2em;
     margin: 10px;
 }
-@media(min-width:786px){
-        /* Header */
+@media(min-width:768px){
+    /* Header */
     .main-header-top-bar{
         display: flex;
-
         justify-content: space-between;
     }
     .copy-header{
-        max-width: 350px;
+        max-width: 30%;
         text-align: right;
     }
     .burger-bottom{
@@ -113,7 +176,6 @@ font-size: 16px;
     }
     .main-navbar{
         display: flex;
-        /* border: dotted 2px red; */
         justify-content: space-between;
     }
     .main-navbar ul{
@@ -122,7 +184,24 @@ font-size: 16px;
     .main-navbar li{
     margin: 0 5px;
     }
-}
+    /* Main */
+    .main-section .section-products{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .description{
+        display:block;
+        font-weight: bold;
+        color: #666;
+    }
+    .section-article{
+        width: 40%;
+        box-shadow: 0 0 10px rgb(100, 100,100);
+    }
+
+    }
+
 @media(min-width:1200px){
     .logo{
         width: 250px;
@@ -149,4 +228,13 @@ font-size: 16px;
     .main-navbar a{
         font-size: 19px;
         }
+    /* Main */
+    .main-section .section-products{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .section-article{
+        width: 25%;
+        box-shadow: 0 0 10px rgb(100, 100,100);
+    }
 }

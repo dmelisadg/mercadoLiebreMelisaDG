@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Crea tu cuenta</title>
+</head>
+<body>
+<form action="/register" method="post" class="formulario-register">
+        <div class="formulario-control">
+            <label>Nombre y apellido:</label>
+            <input type="text" name="nombre" id="nombre" class="control-input">
+        </div>
+        <div class="formulario-control">
+            <label>Nombre de usuari@:</label>
+            <input type="text" name="usuario" id="usuario" class="control-input">
+        </div>
+        <div class="formulario-control">
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fecha" value="dia/mes/año"
+            id="fecha" class="control-input">
+        </div>
+        <div class="formulario-control">
+            <label>Domicilio:</label>
+            <input type="text" name="usuario" id="usuario" class="control-input">
+        </div>
+        <div class="formulario-control">
+            <label for="perfil">Pefil de usuario:</label>
+            Comprar  <input type="radio" name="perfil" value="comprar">
+            Vender  <input type="radio" name="perfil" value="vender">
+        </div>
+        <div class="formulario-control">
+            <label>Categorias de interés</label>
+            <select name="categoria" id="categoria" class="control-input">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electrónicos</option>
+                <option value="vestuario">Vestuario</option>
+                <option value="vida">Vida sana</option>
+                <option value="jueguteria">Juguetería</option>
+            </select>
+        </div>
+        <div class="formulario-control">
+            <label>Foto de usuario</label>
+            <input type="file" name=photo accept=".jpg">
+        </div>
+        <div class="formulario-control">
+            <label>Contraseña</label>
+            <input type="password">
+        </div>
+        <div class="formulario-control">
+            <label>Confirmar contraseña</label>
+            <input type="password">
+        </div>
+        <button type="reset" class="control-buttom">Borrar campos</button>
+        <button type="submit" class="control-buttom">Enviar</button>
+</form> 
+</body>
+</html>
