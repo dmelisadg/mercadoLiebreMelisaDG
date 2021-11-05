@@ -20,6 +20,8 @@ h2{
 .main-header {
     background-color: #EAC926;
     padding: 15px;
+    position: fixed;
+    top: 0%;
 }
 .main-header-top-bar{
     display: flex;
@@ -92,6 +94,7 @@ h2{
 /* Home banner */
 .home-banner{
     display: flex;
+    margin-top: 32vh;
 }
 .home-banner img{
    width: 100vw; 
@@ -174,7 +177,9 @@ h2{
 }
 @media(min-width:481px){
     /* Header */
-
+    .home-banner{
+        margin-top: 19vh;
+    }
     .main-header-top-bar{
         display: flex;
         justify-content: space-between;
@@ -229,6 +234,9 @@ h2{
     }
 
 @media(min-width:768px){
+    .home-banner{
+        margin-top: 30vh;
+    }
     .logo{
         width: 30%;
     }
